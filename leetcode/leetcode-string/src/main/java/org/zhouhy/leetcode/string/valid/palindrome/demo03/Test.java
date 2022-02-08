@@ -1,4 +1,4 @@
-package org.zhouhy.leetcode.string.valid.palindrome.deom02;
+package org.zhouhy.leetcode.string.valid.palindrome.demo03;
 
 public class Test {
     public static void main(String[] args) {
