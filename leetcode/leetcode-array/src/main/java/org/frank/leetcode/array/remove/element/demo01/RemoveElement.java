@@ -5,6 +5,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class RemoveElement {
+    /**
+     * https://leetcode.cn/problems/remove-element/solutions/
+     * 
+     * */
     public int removeElement(int[] nums, int val) {
         List<Integer> tempList = new ArrayList<>();
         for(int num:nums){
