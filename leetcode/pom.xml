@@ -11,6 +11,7 @@
     <modules>
         <module>leetcode-string</module>
         <module>leetcode-array</module>
+        <module>leetcode-dynamic_programming</module>
     </modules>
 
     <properties>
