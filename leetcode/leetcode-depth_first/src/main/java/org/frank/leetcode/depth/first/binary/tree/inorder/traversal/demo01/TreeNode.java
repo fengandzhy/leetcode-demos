@@ -1,4 +1,4 @@
-package org.frank.leetcode.depth.first.demo01;
+package org.frank.leetcode.depth.first.binary.tree.inorder.traversal.demo01;
 
 public class TreeNode {
     int val;
