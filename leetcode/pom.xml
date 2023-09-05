@@ -12,6 +12,7 @@
         <module>leetcode-string</module>
         <module>leetcode-array</module>
         <module>leetcode-dynamic_programming</module>
+        <module>leetcode-depth_first</module>
     </modules>
 
     <properties>
