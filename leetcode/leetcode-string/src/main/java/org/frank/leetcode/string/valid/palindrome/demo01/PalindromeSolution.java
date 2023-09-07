@@ -1,4 +1,4 @@
-package org.zhouhy.leetcode.string.valid.palindrome.demo01;
+package org.frank.leetcode.string.valid.palindrome.demo01;
 
 public class PalindromeSolution {
 
