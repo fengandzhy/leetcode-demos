@@ -1,5 +1,9 @@
 package org.frank.leetcode.string.longest.common.prefix.demo01;
 
+/**
+ * https://leetcode.cn/problems/longest-common-prefix
+ * 
+ * */
 public class LongestCommonPrefixSolution1 {
 
     public String longestCommonPrefix(String[] strs) {
