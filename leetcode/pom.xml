@@ -13,6 +13,7 @@
         <module>leetcode-array</module>
         <module>leetcode-dynamic_programming</module>
         <module>leetcode-depth_first</module>
+        <module>leetcode-recursion</module>
     </modules>
 
     <properties>
