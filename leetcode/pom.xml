@@ -14,6 +14,7 @@
         <module>leetcode-dynamic_programming</module>
         <module>leetcode-depth_first</module>
         <module>leetcode-recursion</module>
+        <module>leetcode-linked_list</module>
     </modules>
 
     <properties>
