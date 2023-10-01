@@ -2,6 +2,9 @@ package org.frank.leetcode.array.count.items.matching.a.rule.demo01;
 
 import java.util.List;
 
+/**
+ * https://leetcode.cn/problems/count-items-matching-a-rule/description/
+ * */
 public class CountItemsMatchingARuleSolution1 {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int itemCount = 0;
