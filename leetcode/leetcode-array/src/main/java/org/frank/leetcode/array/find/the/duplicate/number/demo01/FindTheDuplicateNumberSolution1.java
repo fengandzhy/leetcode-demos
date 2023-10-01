@@ -3,6 +3,9 @@ package org.frank.leetcode.array.find.the.duplicate.number.demo01;
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * https://leetcode.cn/problems/find-the-duplicate-number/description/
+ * */
 public class FindTheDuplicateNumberSolution1 {
 
     public int findDuplicate(int[] nums) {
