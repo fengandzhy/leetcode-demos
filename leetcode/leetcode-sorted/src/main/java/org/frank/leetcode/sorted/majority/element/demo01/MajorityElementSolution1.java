@@ -30,5 +30,11 @@ public class MajorityElementSolution1 {
     public static void main(String[] args) {
         Map<String,String> map = new HashMap<>();
         map.put("aa","bb");
+        Iterator<Map.Entry<String,String>> iterator = map.entrySet().iterator();
+        while(iterator.hasNext()){
+            if(iterator.next().getKey().equals("aa")){
+                System.out.println("Find it.");
+            }
+        }
     }
 }
