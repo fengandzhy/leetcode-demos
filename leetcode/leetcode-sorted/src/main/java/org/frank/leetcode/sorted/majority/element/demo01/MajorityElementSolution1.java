@@ -3,7 +3,9 @@ package org.frank.leetcode.sorted.majority.element.demo01;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
+/**
+ * https://leetcode.cn/problems/majority-element/description/
+ * */
 public class MajorityElementSolution1 {
     
     public int majorityElement(int[] nums) {
