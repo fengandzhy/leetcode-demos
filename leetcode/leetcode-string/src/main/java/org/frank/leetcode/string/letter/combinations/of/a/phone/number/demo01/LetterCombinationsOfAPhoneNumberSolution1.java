@@ -1,23 +1,43 @@
 package org.frank.leetcode.string.letter.combinations.of.a.phone.number.demo01;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
+/**
+ * https://leetcode.cn/problems/letter-combinations-of-a-phone-number/ 
+ * */
 public class LetterCombinationsOfAPhoneNumberSolution1 {
     public List<String> letterCombinations(String digits) {
         List<String> words = new ArrayList<>();
+        if (digits.length() == 0) {
+            return words;
+        }
         char[] chars = digits.toCharArray();
-        Map<Character, String[]> map = new HashMap<>();
+        List<String[]> lists = new ArrayList<>();
         for(char c: chars){
-            map.put(c, getLetters(c));
-        }        
+            lists.add(getLetters(c));
+        }
+        int index = 0;
+        String[] strings = lists.get(index);
+        for(String string:strings){
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(string);
+            combineStr(stringBuilder,lists,index+1,words);
+        }
         return words;
     }
     
-    public void combineStr(List<String> words, Map<Character, String[]> map, StringBuilder sb){
-        
+    public void combineStr(StringBuilder stringBuilder, List<String[]> lists, int index, List<String> words){
+        if(index == lists.size()){
+            words.add(stringBuilder.toString());
+            return;
+        }
+        String[] strings = lists.get(index);
+        for(String string:strings){
+            stringBuilder.append(string);
+            combineStr(stringBuilder,lists,index+1,words);
+            stringBuilder.deleteCharAt(index);
+        }
     }
     
     private String[] getLetters(char c){
@@ -41,5 +61,10 @@ public class LetterCombinationsOfAPhoneNumberSolution1 {
             default:
                 return new String[]{};
         }
+    }
+
+    public static void main(String[] args) {
+        LetterCombinationsOfAPhoneNumberSolution1 solution1 = new LetterCombinationsOfAPhoneNumberSolution1();
+        solution1.letterCombinations("23");
     }
 }
