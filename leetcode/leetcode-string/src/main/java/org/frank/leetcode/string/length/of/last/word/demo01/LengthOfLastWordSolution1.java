@@ -1,6 +1,9 @@
-package org.frank.leetcode.string.length.of.last.word;
+package org.frank.leetcode.string.length.of.last.word.demo01;
 
-public class LengthOfLastWordSolution {
+/**
+ * https://leetcode.cn/problems/length-of-last-word/description/
+ * */
+public class LengthOfLastWordSolution1 {
     
     public int lengthOfLastWord(String s) {
         String[] stringArray = s.split(" ");
@@ -9,7 +12,7 @@ public class LengthOfLastWordSolution {
     }
 
     public static void main(String[] args) {
-        LengthOfLastWordSolution length = new LengthOfLastWordSolution();
+        LengthOfLastWordSolution1 length = new LengthOfLastWordSolution1();
         System.out.println(length.lengthOfLastWord("luffy is still joyboy"));
     }
 }
