@@ -1,5 +1,8 @@
 package org.frank.leetcode.string.length.of.last.word;
 
+/**
+ * https://leetcode.cn/problems/length-of-last-word/description/
+ * */
 public class LengthOfLastWordSolution {
     
     public int lengthOfLastWord(String s) {
