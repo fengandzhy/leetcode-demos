@@ -13,43 +13,42 @@ public class MergeTwoSortedListsSolutions1 {
                 break;
             }
             if(list2 == null){
-                currentNode = list1;
-//                if(heardNode == null){
-//                    heardNode = currentNode;
-//                }
+                if(currentNode == null){
+                    heardNode = list1;                    
+                }else{
+                    currentNode.next = list1;
+                }                
                 break;
             }
             if(list1 == null){
-                currentNode = list2;
-//                if(heardNode == null){
-//                   heardNode = currentNode; 
-//                }
+                if(currentNode == null){
+                    heardNode = list2;
+                }else{
+                    currentNode.next = list2;
+                }                
                 break;
             }
             if(list1.val < list2.val){
                 if(currentNode == null){
                     currentNode = list1;
+                    heardNode = list1;
+                    list1 = list1.next;
+                    continue;
                 }
-                ListNode tempNode = currentNode;
-                currentNode = list1;
-                tempNode.next = currentNode;
+                currentNode.next = list1;
                 list1 = list1.next;
             }else {
                 if(currentNode == null){
-                    currentNode = list2;
+                    currentNode = list2; 
+                    heardNode = list2;
+                    list2 = list2.next;
+                    continue;
                 }
-                ListNode tempNode = currentNode;
-                currentNode = list2;
-                tempNode.next = currentNode;
+                currentNode.next = list2;
                 list2 = list2.next;
             }
-            if(heardNode == null){
-                heardNode = currentNode;
-            }
-        }
-        if(heardNode == null){
-            heardNode = currentNode;
-        }
+            currentNode = currentNode.next;
+        }        
         return heardNode;
     }
 
