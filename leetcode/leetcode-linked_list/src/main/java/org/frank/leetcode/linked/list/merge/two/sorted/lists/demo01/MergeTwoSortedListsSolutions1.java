@@ -1,5 +1,7 @@
 package org.frank.leetcode.linked.list.merge.two.sorted.lists.demo01;
 
+import org.frank.leetcode.linked.list.merge.two.sorted.lists.ListNode;
+
 /**
  * https://leetcode.cn/problems/merge-two-sorted-lists/description/
  * 

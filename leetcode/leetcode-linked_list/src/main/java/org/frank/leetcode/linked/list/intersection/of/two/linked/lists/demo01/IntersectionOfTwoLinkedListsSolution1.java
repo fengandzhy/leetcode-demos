@@ -1,5 +1,7 @@
 package org.frank.leetcode.linked.list.intersection.of.two.linked.lists.demo01;
 
+import org.frank.leetcode.linked.list.intersection.of.two.linked.lists.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
