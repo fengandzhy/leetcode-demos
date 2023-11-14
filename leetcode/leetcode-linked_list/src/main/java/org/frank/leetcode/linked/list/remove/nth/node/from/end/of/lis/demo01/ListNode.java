@@ -1,4 +1,4 @@
-package remove.nth.node.from.end.of.lis.demo01;
+package org.frank.leetcode.linked.list.remove.nth.node.from.end.of.lis.demo01;
 
 public class ListNode {
     int val;
