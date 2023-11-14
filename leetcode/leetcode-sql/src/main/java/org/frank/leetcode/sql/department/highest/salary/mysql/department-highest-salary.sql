@@ -7,7 +7,7 @@ where e.salary in
       (select max(salary) from Employee e1
        where e.departmentId = e1.departmentId group by e1.departmentId)#这里的group by 必须放在where 之后
 
-#以下是一个连表用group by 的例子
+##以下是一个连表用group by 的例子
 select d.name as Department,
        e.name as Employee,
        e.salary as Salary
