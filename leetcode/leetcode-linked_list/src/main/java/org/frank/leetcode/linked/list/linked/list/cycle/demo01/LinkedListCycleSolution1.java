@@ -1,5 +1,7 @@
 package org.frank.leetcode.linked.list.linked.list.cycle.demo01;
 
+import org.frank.leetcode.linked.list.linked.list.cycle.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

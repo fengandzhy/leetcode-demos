@@ -1,5 +1,7 @@
 package org.frank.leetcode.linked.list.remove.nth.node.from.end.of.lis.demo01;
 
+import org.frank.leetcode.linked.list.remove.nth.node.from.end.of.lis.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
