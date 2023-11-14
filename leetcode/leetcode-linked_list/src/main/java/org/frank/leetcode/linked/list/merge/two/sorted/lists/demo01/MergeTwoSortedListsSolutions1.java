@@ -14,16 +14,16 @@ public class MergeTwoSortedListsSolutions1 {
             }
             if(list2 == null){
                 currentNode = list1;
-                if(heardNode == null){
-                    heardNode = currentNode;
-                }
+//                if(heardNode == null){
+//                    heardNode = currentNode;
+//                }
                 break;
             }
             if(list1 == null){
                 currentNode = list2;
-                if(heardNode == null){
-                   heardNode = currentNode; 
-                }
+//                if(heardNode == null){
+//                   heardNode = currentNode; 
+//                }
                 break;
             }
             if(list1.val < list2.val){
@@ -47,6 +47,27 @@ public class MergeTwoSortedListsSolutions1 {
                 heardNode = currentNode;
             }
         }
+        if(heardNode == null){
+            heardNode = currentNode;
+        }
         return heardNode;
-    }   
+    }
+
+    public static void main(String[] args) {
+        MergeTwoSortedListsSolutions1 solutions1 = new MergeTwoSortedListsSolutions1();
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(4);
+        node1.next = node2;
+        node2.next = node3;
+
+        ListNode node4 = new ListNode(1);
+        ListNode node5 = new ListNode(3);
+        ListNode node6 = new ListNode(4);
+        node4.next = node5;
+        node5.next = node6;
+
+        solutions1.mergeTwoLists(node1,node4);
+        
+    }
 }
