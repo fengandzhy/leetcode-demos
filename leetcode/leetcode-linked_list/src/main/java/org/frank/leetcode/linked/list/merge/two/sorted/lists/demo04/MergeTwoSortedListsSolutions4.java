@@ -25,7 +25,7 @@ public class MergeTwoSortedListsSolutions4 {
             }else if(list2 == null){
                 nodes.add(list1);
                 list1 = list1.next;
-            }else if(list1.val < list2.val){
+            }else if(list1.val < list2.val){ // 必须注意这里要用 else if 
                 nodes.add(list1);
                 list1 = list1.next;
             }else{
