@@ -4,7 +4,7 @@ import org.frank.leetcode.linked.list.merge.two.sorted.lists.ListNode;
 
 public class MergeTwoSortedListsSolutions3 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode headerNode = new ListNode(-1);
+        ListNode headerNode = new ListNode(-1); // 必须设立一个头部节点,返回的就是这个头部节点
         ListNode listNode = headerNode;
         if(list1 == null){
             return list2;
