@@ -4,7 +4,9 @@ import org.frank.leetcode.linked.list.merge.k.sorted.lists.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * https://leetcode.cn/problems/merge-k-sorted-lists/description/
+ * */
 public class MergeKSortedListsSolutions1 {
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode headerNode = new ListNode();
