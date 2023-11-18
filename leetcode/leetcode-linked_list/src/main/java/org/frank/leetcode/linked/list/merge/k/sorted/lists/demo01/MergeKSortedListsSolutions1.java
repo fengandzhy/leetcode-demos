@@ -27,13 +27,13 @@ public class MergeKSortedListsSolutions1 {
     }
     
     private void merge(ListNode currentNode, List<ListNode> tempList){
-        currentNode.next = tempList.get(0);
+        currentNode.next = tempList.get(0); // 升序排好的数组, 每次都取第一位
         currentNode = currentNode.next;
         ListNode newNode = tempList.get(0).next;
         tempList.remove(0);
         if(newNode != null){
             tempList.add(newNode);
-            tempList.sort((a,b) ->{
+            tempList.sort((a,b) ->{ // 加入新节点之后重新排序
                 return a.val - b.val;
             });
         }
