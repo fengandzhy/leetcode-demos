@@ -12,17 +12,31 @@ public class MergeKSortedListsSolutions1 {
         ListNode currentNode = headerNode;
         List<ListNode> tempList = new ArrayList<>();
         for(ListNode node:lists){
-            tempList.add(node);
+            if(node != null){
+                tempList.add(node);
+            }            
         }
-        tempList.sort((a,b) ->{
-            return a.val - b.val;
-        });
-        
+        if(tempList!=null && tempList.size() > 0){
+            tempList.sort((a,b) ->{
+                return a.val - b.val;
+            });
+            merge(currentNode,tempList);
+        }        
         return headerNode;
     }
     
     private void merge(ListNode currentNode, List<ListNode> tempList){
-        
+        currentNode.next = tempList.get(0);
+        currentNode = currentNode.next;
+        ListNode newNode = tempList.get(0).next;
+        tempList.remove(0);
+        if(newNode != null){
+            tempList.add(newNode);
+            tempList.sort((a,b) ->{
+                return a.val - b.val;
+            });
+        }
+        merge(currentNode,tempList);        
     }
 
     public static void main(String[] args) {
@@ -45,5 +59,8 @@ public class MergeKSortedListsSolutions1 {
         for(ListNode node : tempList){
             System.out.println(node.val);
         }
+        
+        tempList.remove(0);
+        System.out.println(tempList.get(0).val);
     }
 }
