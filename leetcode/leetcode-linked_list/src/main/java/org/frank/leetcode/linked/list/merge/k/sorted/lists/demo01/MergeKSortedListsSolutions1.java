@@ -9,8 +9,8 @@ import java.util.List;
  * */
 public class MergeKSortedListsSolutions1 {
     public ListNode mergeKLists(ListNode[] lists) {
-        ListNode headerNode = new ListNode();
-        ListNode currentNode = headerNode;
+        ListNode headerNode = new ListNode(); // 先确保有一个头节点, 这个头节点并不是真正的头节点，而是返回的队列里头节点的上一个节点
+        ListNode currentNode = headerNode;  // 这个是遍历节点
         List<ListNode> tempList = new ArrayList<>();
         for(ListNode node:lists){
             if(node != null){
