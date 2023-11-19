@@ -12,7 +12,7 @@ public class ValidSudokuSolution2 {
                     rows[i][index]++;
                     columns[i][index]++;
                     subBox[i/3][j/3][index]++;
-                    if(rows[i][index] > 1 || columns[i][index] > 1 || subBox[i/3][j/3][index] > 1){
+                    if(rows[i][index] > 1 || columns[j][index] > 1 || subBox[i/3][j/3][index] > 1){
                         return false;
                     }
                 }
