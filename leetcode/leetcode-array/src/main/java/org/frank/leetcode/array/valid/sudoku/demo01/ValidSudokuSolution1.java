@@ -3,6 +3,9 @@ package org.frank.leetcode.array.valid.sudoku.demo01;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://leetcode.cn/problems/valid-sudoku/description/
+ * */
 public class ValidSudokuSolution1 {
     public boolean isValidSudoku(char[][] board) {
         List<Character> characters1 = new ArrayList<>();
