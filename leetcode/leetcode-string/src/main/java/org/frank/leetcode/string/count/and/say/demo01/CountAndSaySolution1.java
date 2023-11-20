@@ -1,7 +1,9 @@
 package org.frank.leetcode.string.count.and.say.demo01;
 
 
-
+/**
+ * https://leetcode.cn/problems/count-and-say/description/
+ * */
 public class CountAndSaySolution1 {
     public String countAndSay(int n) {
         int count = 1;
