@@ -27,6 +27,7 @@ public class SudokuSolverSolution1 {
                 }
             }
         }
+        dfs(board, 0);
     }
 
     private void dfs(char[][] board, int pos) {
