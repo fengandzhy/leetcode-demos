@@ -10,8 +10,8 @@ public class ValidSudokuSolution2 {
                 char c = board[i][j];
                 if(c != '.'){
                     int index = c - '0' - 1; // 算出在数组中的位置, 例如3 在数组中的下标就是2;
-                    rows[i][index]++;
-                    columns[j][index]++; 
+                    rows[i][index]++; // 这里只管横方向上的, 所以这里是i 
+                    columns[j][index]++; // 这里只管竖方向上的, 所以这里是j
                     subBox[i/3][j/3][index]++;
                     if(rows[i][index] > 1 || columns[j][index] > 1 || subBox[i/3][j/3][index] > 1){
                         return false;
