@@ -44,7 +44,8 @@ public class SudokuSolverSolution1 {
                 subBox[i/3][j/3][digit] = true;
                 board[i][j] = (char)(digit + '0' +1); // 数字是从1到9不是从0到9所以这里必须加1
                 dfs(board,pos+1);
-                rows[i][digit] = false;
+                // 下面三个就是回溯
+                rows[i][digit] = false; 
                 columns[j][digit] = false;
                 subBox[i/3][j/3][digit] = false;
             }
