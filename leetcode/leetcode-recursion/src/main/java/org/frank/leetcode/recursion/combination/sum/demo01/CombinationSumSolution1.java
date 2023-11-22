@@ -28,8 +28,8 @@ public class CombinationSumSolution1 {
             return;
         }
         for(int i = begin; i<length; i++){
-            deque.addFirst(candidates[i]);
-            dfs(candidates,begin,length,target-candidates[i],lists,deque);
+            deque.addLast(candidates[i]);
+            dfs(candidates,i,length,target-candidates[i],lists,deque);
             deque.removeLast();
         }
     }    
