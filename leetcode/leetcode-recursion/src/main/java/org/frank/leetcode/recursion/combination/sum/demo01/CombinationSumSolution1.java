@@ -8,11 +8,11 @@ import java.util.List;
 public class CombinationSumSolution1 {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> lists = new ArrayList<>();
-        int length = candidates.length;
-        if(length == 0){
+        List<List<Integer>> lists = new ArrayList<>();        
+        if(candidates== null || candidates.length == 0){
             return lists;
         }
+        int length = candidates.length;
         Deque<Integer> deque = new ArrayDeque<>(length);
         dfs(candidates,0,length,target,lists,deque);
         return lists;
