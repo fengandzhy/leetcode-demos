@@ -32,6 +32,7 @@ public class CountAndSaySolution1 {
                 sb.append(chars[left]);
                 break;
             }
+            // 用左边和右边是否相等来判断是应该是否数量相加
             if(chars[left]==(chars[right])){
                 count ++;
             }else{
