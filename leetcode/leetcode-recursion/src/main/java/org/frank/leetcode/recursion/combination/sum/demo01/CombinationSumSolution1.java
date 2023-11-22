@@ -16,6 +16,7 @@ public class CombinationSumSolution1 {
             return lists;
         }
         int length = candidates.length;
+        // 注意这里, 这是一个新的数据结构
         Deque<Integer> deque = new ArrayDeque<>(length);
         dfs(candidates,0,length,target,lists,deque);
         return lists;
