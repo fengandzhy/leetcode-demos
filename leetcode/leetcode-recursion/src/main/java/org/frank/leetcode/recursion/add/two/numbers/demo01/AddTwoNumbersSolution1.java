@@ -19,7 +19,7 @@ public class AddTwoNumbersSolution1 {
             int carry = 0;
             int a3 = a1 + a2;
             if(a3 > 9){
-                carry = 1;
+                carry = 1; // 进位计1的意思
                 node.val = a3 % 10;
             }else{
                 node.val = a3;
