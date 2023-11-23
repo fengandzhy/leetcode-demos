@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
  */
 public class FirstMissingPositiveSolution1 {
     public int firstMissingPositive(int[] nums) {
+        // 第一步先排序
         List<Integer> list = Arrays.stream(nums).boxed().sorted().collect(Collectors.toList());
         int prevInt = list.get(0);
         if (prevInt > 1) {
@@ -25,7 +26,9 @@ public class FirstMissingPositiveSolution1 {
         }
         for (int i = 0; i < list.size(); i++) {
             int currentInt = list.get(i);
+            // 后数减去前数如果跨度超越了2 就要分两种情况来讨论
             if (currentInt - prevInt >= 2) {
+                // 如果 currentInt < 2 要么 currentInt 还没到1 要么 currentInt 已经是1 
                 if (currentInt < 2) {
                     prevInt = currentInt;
                 } else {
