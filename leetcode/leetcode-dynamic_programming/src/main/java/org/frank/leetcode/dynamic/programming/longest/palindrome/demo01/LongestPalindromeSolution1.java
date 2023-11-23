@@ -1,6 +1,6 @@
 package org.frank.leetcode.dynamic.programming.longest.palindrome.demo01;
 
-public class LongestPalindromeSolution {
+public class LongestPalindromeSolution1 {
 
     /**
      * https://leetcode.com/problems/longest-palindromic-substring/
@@ -52,7 +52,7 @@ public class LongestPalindromeSolution {
     }
 
     public static void main(String[] args) {
-        LongestPalindromeSolution solution = new LongestPalindromeSolution();
+        LongestPalindromeSolution1 solution = new LongestPalindromeSolution1();
         String str = solution.longestPalindrome("babad");
         System.out.println(str);
     }
