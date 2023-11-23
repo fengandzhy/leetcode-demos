@@ -1,6 +1,5 @@
 package org.frank.leetcode.array.median.of.two.sorted.arrays.demo01;
 
-import java.util.Arrays;
 
 /**
  * https://leetcode.cn/problems/median-of-two-sorted-arrays/description/
