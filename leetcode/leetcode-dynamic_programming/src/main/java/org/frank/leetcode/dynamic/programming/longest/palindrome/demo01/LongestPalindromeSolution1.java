@@ -5,20 +5,6 @@ public class LongestPalindromeSolution1 {
     /**
      * https://leetcode.com/problems/longest-palindromic-substring/
      */
-//    public String longestPalindrome(String s) {
-//        String longestPalindrome = "";
-//        int length = s.length();
-//        for (int i = 0; i < length; i++) {
-//            int factor = Math.max(longestPalindrome.length(), 1);
-//            for (int j = i + factor; j <= length; j++) {
-//                String tempStr = s.substring(i, j);
-//                if(isPalindrome(tempStr) && tempStr.length()>longestPalindrome.length()){
-//                    longestPalindrome  = tempStr;
-//                }
-//            }
-//        }
-//        return longestPalindrome;
-//    }
     public String longestPalindrome(String s) {        
         int subStringLength = s.length();
         int stringLength = s.length();
