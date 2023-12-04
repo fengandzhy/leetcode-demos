@@ -16,3 +16,20 @@ FROM
     Trips AS T
         JOIN Users AS U ON ( T.client_id = U.users_id OR T.driver_id = U.users_id )
         AND U.banned = 'No'
+
+/**
+  * 这是这道题的关键之一, 必须分别连接  
+  */
+SELECT
+    *
+FROM
+    Trips AS T
+        JOIN Users AS U1 ON ( T.client_id = U1.users_id AND U1.banned = 'No' )
+        JOIN Users AS U2 ON ( T.driver_id = U2.users_id AND U2.banned = 'No' )
+
+/**
+* 单纯地使用group by 毫无意义, 只是取出了每个种类的第一条而已
+*/
+select * from trips GROUP BY request_at
+
+
