@@ -37,3 +37,9 @@ select * from trips GROUP BY request_at
 * from 前面的, 不在统计函数里的字段,一定要在group by里, 
 */
 select count(*), request_at from trips GROUP BY request_at
+
+
+/**
+* 只有统计函数没有group by 这样得到的结果是完全错误的 count(*) 得到的是全部 count request_at 则是第一天
+*/
+select count(*), request_at from trips
