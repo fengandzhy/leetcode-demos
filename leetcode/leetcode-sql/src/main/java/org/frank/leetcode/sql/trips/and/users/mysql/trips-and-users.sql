@@ -30,3 +30,25 @@ WHERE
   AND c.banned = 'No'
 GROUP BY
     a.request_at
+
+---------------------------------------------------------
+
+with unbanned_users as (
+    select users_id from Users WHERE banned="Yes"
+    )
+
+SELECT
+    request_at AS Day,
+    ROUND(COUNT(CASE WHEN (status IN ('cancelled_by_driver','cancelled_by_client'))
+            THEN id else null end)/COUNT(id),2) as "Cancellation Rate"
+
+FROM
+    Trips
+WHERE
+    client_id NOT IN (SELECT * FROM unbanned_users)
+  and driver_id NOT IN (SELECT * FROM unbanned_users)
+  and (request_at > '2013-09-29' AND request_at < '2013-10-04')
+
+GROUP BY 1
+
+
