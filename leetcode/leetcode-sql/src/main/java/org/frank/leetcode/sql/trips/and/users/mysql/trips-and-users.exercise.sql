@@ -6,7 +6,10 @@ FROM
         JOIN Users AS U;
 
 
--- ON后面这是笛卡尔集合的条件
+/**
+* ON后面这是笛卡尔集合的条件 T.client_id = U.users_id OR T.driver_id = U.users_id 这就有可能一条记录有两个满足条件的
+* 例如 在Trips 中有id = 1 这条记录, 在这里就可以有两个记录
+*/
 SELECT
     *
 FROM
