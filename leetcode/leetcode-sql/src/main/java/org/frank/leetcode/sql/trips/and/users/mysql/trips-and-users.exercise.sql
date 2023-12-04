@@ -33,3 +33,7 @@ FROM
 select * from trips GROUP BY request_at
 
 
+/**
+* from 前面的, 不在统计函数里的字段,一定要在group by里, 
+*/
+select count(*), request_at from trips GROUP BY request_at
