@@ -1,11 +1,11 @@
 package org.frank.leetcode.string.longest.substring.with.at.most.two.distinct.characters.demo01;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-
+/**
+ * https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/description/
+ * */
 public class LongestSubstringWithAtMostTwoDistinctCharactersSolution1 {
     public int lengthOfLongestSubstringTwoDistinct(String s) {        
         int length = s.length();
