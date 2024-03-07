@@ -5,6 +5,9 @@ import org.frank.leetcode.string.reverse.linked.list.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://leetcode.cn/problems/reverse-linked-list/description/
+ * */
 public class ReverseLinkedListSolution1 {
     public ListNode reverseList(ListNode head) {
         List<ListNode> nodeList = new ArrayList<>();
