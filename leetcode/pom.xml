@@ -17,6 +17,7 @@
         <module>leetcode-linked_list</module>
         <module>leetcode-sorted</module>
         <module>leetcode-sql</module>
+        <module>leetcode-stack</module>
     </modules>
 
     <properties>
