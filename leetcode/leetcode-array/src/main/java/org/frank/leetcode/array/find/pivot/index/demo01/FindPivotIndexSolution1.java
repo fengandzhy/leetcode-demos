@@ -27,10 +27,5 @@ public class FindPivotIndexSolution1 {
             index ++;
         }        
         return -1;
-    }
-
-    public static void main(String[] args) {
-        FindPivotIndexSolution1 solution1 = new FindPivotIndexSolution1();
-        solution1.pivotIndex(new int[]{1,7,3,6,5,6});
-    }
+    }    
 }
