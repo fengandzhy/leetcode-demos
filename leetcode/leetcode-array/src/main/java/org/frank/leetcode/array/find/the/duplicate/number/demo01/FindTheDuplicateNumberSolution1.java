@@ -7,15 +7,14 @@ import java.util.HashSet;
  * https://leetcode.cn/problems/find-the-duplicate-number/description/
  * */
 public class FindTheDuplicateNumberSolution1 {
-
     public int findDuplicate(int[] nums) {
-        Set<Integer> list = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for(int i = 0; i< nums.length;i++){
-            if(list.contains(nums[i])) {
+            if(set.contains(nums[i])) {
                 return nums[i];
             }
-            list.add(nums[i]);
+            set.add(nums[i]);
         }
         return -1;
-    }
+    }    
 }
