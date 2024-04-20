@@ -10,7 +10,10 @@ import java.util.stream.Collectors;
 public class FirstMissingPositiveSolution1 {
     public int firstMissingPositive(int[] nums) {
         // 第一步先排序
-        List<Integer> list = Arrays.stream(nums).boxed().sorted().collect(Collectors.toList());
+        Arrays.sort(nums);
+//        List<Integer> list = Arrays.stream(nums).boxed().sorted().collect(Collectors.toList());
+//        nums Arrays.sort(nums);
+        List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
         int prevInt = list.get(0);
         if (prevInt > 1) {
             return 1;
