@@ -51,6 +51,10 @@ public class FirstMissingPositiveSolution2 {
                 return i;
         }
 
+        /**
+         * [1,2,4] 这个数组, 最小的缺失正整数是3 0 - n-1 这个下标里, 含有 1 - n 这些数字中 在上面所有的下标都被替换了, 唯独没有  nums[0] 被替换, 所以最小的缺失正整数是 3 
+         * 
+         * */
         if (nums[0] > 0)
             return n;
 
