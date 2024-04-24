@@ -1,5 +1,7 @@
 package org.frank.leetcode.array.first.missing.positive.demo02;
 
+import java.math.BigInteger;
+
 public class FirstMissingPositiveSolution2 {
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;
@@ -61,10 +63,12 @@ public class FirstMissingPositiveSolution2 {
         return n + 1;    
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        
 //        int[] nums = {-2,5,7,6,9,3,8,9,4,1};
-        int[] nums = {1,3,4};
-        FirstMissingPositiveSolution2 solution2 = new FirstMissingPositiveSolution2();
-        solution2.firstMissingPositive(nums);
+//        int[] nums = {1,3,4};
+//        FirstMissingPositiveSolution2 solution2 = new FirstMissingPositiveSolution2();
+//        solution2.firstMissingPositive(nums);
+
+        
     }
 }
